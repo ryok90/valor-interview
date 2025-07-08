@@ -1,0 +1,36 @@
+{
+  "name": "@valor/interview-challenges",
+  "version": "1.0.0",
+  "description": "CLI tool for downloading Valor interview challenges",
+  "main": "dist/index.js",
+  "bin": {
+    "valor-challenges": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "VALOR_CHALLENGES_REPO_URL=https://github.com/valor-org/valor-challenges.git tsx src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.12",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.19.5",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "cli",
+    "interview",
+    "challenges"
+  ],
+  "author": "Valor",
+  "license": "ISC"
+}
