@@ -1,0 +1,6 @@
+packages:
+  - host
+  - remote
+
+ignoredBuiltDependencies:
+  - esbuild
