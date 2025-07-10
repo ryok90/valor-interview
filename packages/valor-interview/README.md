@@ -2,29 +2,18 @@
 
 A CLI tool for downloading and setting up Valor interview challenges.
 
-## Installation
-
-```bash
-npm install -g @valor/challenges
-# or use with npx
-npx @valor/challenges
-```
-
 ## Usage
 
 ```bash
-valor-challenges
-# or
-npx @valor/challenges
+npx @valor/interview
 ```
 
 The CLI will:
 
-1. Clone the challenges repository
-2. Present a list of available challenges
-3. Allow you to select a challenge
-4. Copy it to your desired location
-5. Optionally install dependencies
+1. Present a list of available challenges
+2. Allow you to select a challenge
+3. Copy it to your desired location
+4. Optionally install dependencies
 
 ## Development
 
@@ -35,8 +24,8 @@ pnpm install
 # Run in development (uses default demo repo)
 pnpm dev
 
-# Build for production
-REPO_URL=https://github.com/your-org/challenges.git pnpm build
+# Build
+pnpm build
 
 # Clean build artifacts
 pnpm clean
@@ -58,7 +47,3 @@ challenges/
 │   └── ...
 └── ...
 ```
-
-## Environment Variables
-
-- `REPO_URL` (required at build time): Git repository URL containing challenges
