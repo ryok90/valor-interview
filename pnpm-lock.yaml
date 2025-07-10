@@ -54,8 +54,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       zephyr-rspack-plugin:
-        specifier: ^0.0.54
-        version: 0.0.54(@swc/helpers@0.5.17)(webpack@5.100.0)
+        specifier: ^0.0.55
+        version: 0.0.55(@swc/helpers@0.5.17)(webpack@5.100.0)
 
   challenges/rspack-mf-react/remote:
     dependencies:
@@ -103,8 +103,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       zephyr-rspack-plugin:
-        specifier: ^0.0.54
-        version: 0.0.54(@swc/helpers@0.5.17)(webpack@5.100.0)
+        specifier: ^0.0.55
+        version: 0.0.55(@swc/helpers@0.5.17)(webpack@5.100.0)
 
   packages/valor-challenges:
     dependencies:
@@ -2801,17 +2801,17 @@ packages:
     resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
     engines: {node: '>=18'}
 
-  zephyr-agent@0.0.54:
-    resolution: {integrity: sha512-p9hl/txsobHYyG6+8dJdhgnnuAxVm4BUt4jaIiXxT2QZjqbgIsGrDYaQfRIgVOMiBoM7XQttzZz67mQaSemQGQ==}
+  zephyr-agent@0.0.55:
+    resolution: {integrity: sha512-/UgpD+wAsQaNmlePvP6vSZLmFAiNvAh7yaSxJ82F0nymMA9X9Ks+fsu6Frag0ueF7ZhVcQb8r52KUUxk9v0Bdw==}
 
-  zephyr-edge-contract@0.0.54:
-    resolution: {integrity: sha512-HaNEySkJCsQ9jY5FYa656sEpBPT483rlvQJZrgNe7qZv7C0Kmeo4ipBl/CiMA69XCzpRRk8+O484aYI3DkV7ag==}
+  zephyr-edge-contract@0.0.55:
+    resolution: {integrity: sha512-JqNZpUsHQZ3EYUIONZtoCxDPo4QspvmH5mue6YIuLLEzE6/urTHpLJ+0OhBr+Zgq7wTKDNzvYse7i28S8rc3lw==}
 
-  zephyr-rspack-plugin@0.0.54:
-    resolution: {integrity: sha512-fHVO/se5PDSf5VhrDS9bjVj8yVL95zvUSmbFXECp+Du1f1DSNacVgSwhLnuz9dgbFq62/o1qXFGwDhocnNBU7w==}
+  zephyr-rspack-plugin@0.0.55:
+    resolution: {integrity: sha512-+ZYfYSfUlDLN40GIbt4kCKioDa82n3aq4FCWTSz1sKK39pGVxjEk/Ew6cANy4kVu9CDnYdoEVX9oxpxhu2TIEA==}
 
-  zephyr-xpack-internal@0.0.54:
-    resolution: {integrity: sha512-vSvBPPuH9PcrJc/gZYU7e27b9F2hEhbgXeLYqmOVU0ptM50+Bff+v2xt62cK/QErzODAHGExfSoViTbG+97N6g==}
+  zephyr-xpack-internal@0.0.55:
+    resolution: {integrity: sha512-JpWjO2OAAJZVqxB/uVM5tEJsGGV1p1m4kQE5FIkrvNweWFbgWquArRdQ9Vol7EjdMfPh1GiERJS9o9RfCnziWA==}
 
 snapshots:
 
@@ -3703,7 +3703,7 @@ snapshots:
 
   at-least-node@1.0.0: {}
 
-  axios-retry@4.5.0(axios@1.10.0):
+  axios-retry@4.5.0(axios@1.10.0(debug@4.4.1)):
     dependencies:
       axios: 1.10.0(debug@4.4.1)
       is-retry-allowed: 2.2.0
@@ -5516,10 +5516,10 @@ snapshots:
 
   yoctocolors-cjs@2.1.2: {}
 
-  zephyr-agent@0.0.54:
+  zephyr-agent@0.0.55:
     dependencies:
       axios: 1.10.0(debug@4.4.1)
-      axios-retry: 4.5.0(axios@1.10.0)
+      axios-retry: 4.5.0(axios@1.10.0(debug@4.4.1))
       cloudflare: 3.5.0
       debug: 4.4.1
       git-url-parse: 15.0.0
@@ -5531,25 +5531,25 @@ snapshots:
       socket.io-client: 4.8.1
       tslib: 2.8.1
       uuid: 8.3.2
-      zephyr-edge-contract: 0.0.54
+      zephyr-edge-contract: 0.0.55
     transitivePeerDependencies:
       - bufferutil
       - encoding
       - supports-color
       - utf-8-validate
 
-  zephyr-edge-contract@0.0.54:
+  zephyr-edge-contract@0.0.55:
     dependencies:
       tslib: 2.8.1
 
-  zephyr-rspack-plugin@0.0.54(@swc/helpers@0.5.17)(webpack@5.100.0):
+  zephyr-rspack-plugin@0.0.55(@swc/helpers@0.5.17)(webpack@5.100.0):
     dependencies:
       '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.100.0)
       '@rspack/core': 1.4.5(@swc/helpers@0.5.17)
       is-ci: 4.1.0
       tslib: 2.8.1
-      zephyr-agent: 0.0.54
-      zephyr-xpack-internal: 0.0.54(webpack@5.100.0)
+      zephyr-agent: 0.0.55
+      zephyr-xpack-internal: 0.0.55(webpack@5.100.0)
     transitivePeerDependencies:
       - '@swc/helpers'
       - bufferutil
@@ -5558,13 +5558,13 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  zephyr-xpack-internal@0.0.54(webpack@5.100.0):
+  zephyr-xpack-internal@0.0.55(webpack@5.100.0):
     dependencies:
       '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.100.0)
       is-ci: 4.1.0
       tslib: 2.8.1
-      zephyr-agent: 0.0.54
-      zephyr-edge-contract: 0.0.54
+      zephyr-agent: 0.0.55
+      zephyr-edge-contract: 0.0.55
     transitivePeerDependencies:
       - bufferutil
       - encoding

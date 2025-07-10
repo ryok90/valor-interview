@@ -5,13 +5,13 @@
 export const CONFIG = {
   /**
    * GitHub repository URL containing challenges
-   * Must be provided via VALOR_CHALLENGES_REPO_URL environment variable at build time
+   * Must be provided via REPO_URL environment variable at build time
    */
   CHALLENGES_REPO_URL: (() => {
-    const url = process.env.VALOR_CHALLENGES_REPO_URL;
+    const url = process.env.REPO_URL;
     if (!url) {
       throw new Error(
-        'VALOR_CHALLENGES_REPO_URL environment variable must be set at build time',
+        'REPO_URL environment variable must be set at build time',
       );
     }
     return url;

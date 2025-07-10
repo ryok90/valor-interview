@@ -31,7 +31,7 @@ The CLI will:
 The repository URL must be set at build time via environment variable:
 
 ```bash
-VALOR_CHALLENGES_REPO_URL=https://github.com/your-org/challenges.git npm run build
+REPO_URL=https://github.com/your-org/challenges.git npm run build
 ```
 
 ## Development
@@ -44,7 +44,7 @@ pnpm install
 pnpm dev
 
 # Build for production
-VALOR_CHALLENGES_REPO_URL=https://github.com/your-org/challenges.git pnpm build
+REPO_URL=https://github.com/your-org/challenges.git pnpm build
 
 # Clean build artifacts
 pnpm clean
@@ -69,4 +69,4 @@ challenges/
 
 ## Environment Variables
 
-- `VALOR_CHALLENGES_REPO_URL` (required at build time): Git repository URL containing challenges
+- `REPO_URL` (required at build time): Git repository URL containing challenges
