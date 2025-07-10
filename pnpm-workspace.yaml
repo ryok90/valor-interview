@@ -1,3 +1,6 @@
 packages:
   - challenges/**
   - packages/**
+
+ignoredBuiltDependencies:
+  - esbuild

@@ -1,5 +1,5 @@
 {
-  "name": "@valor/interview-challenges",
+  "name": "@valor/interview",
   "version": "1.0.0",
   "description": "CLI tool for downloading Valor interview challenges",
   "main": "dist/index.js",
