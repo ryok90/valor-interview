@@ -17,12 +17,14 @@ const config = defineConfig({
   entry: {
     main: './src/main.ts',
   },
+  output: {
+    publicPath: '/',
+  },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
   devServer: {
     port: 4200,
-    open: true,
     hot: true,
     headers: { 'Access-Control-Allow-Origin': '*' },
   },
