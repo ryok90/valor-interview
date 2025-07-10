@@ -26,14 +26,6 @@ The CLI will:
 4. Copy it to your desired location
 5. Optionally install dependencies
 
-## Build Configuration
-
-The repository URL must be set at build time via environment variable:
-
-```bash
-REPO_URL=https://github.com/your-org/challenges.git npm run build
-```
-
 ## Development
 
 ```bash

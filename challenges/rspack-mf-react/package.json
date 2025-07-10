@@ -1,3 +1,7 @@
 {
-  "name": "rspack-mf-react"
+  "name": "rspack-mf-react",
+  "workspaces": [
+    "host",
+    "remote"
+  ]
 }

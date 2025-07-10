@@ -5,17 +5,8 @@
 export const CONFIG = {
   /**
    * GitHub repository URL containing challenges
-   * Must be provided via REPO_URL environment variable at build time
    */
-  CHALLENGES_REPO_URL: (() => {
-    const url = process.env.REPO_URL;
-    if (!url) {
-      throw new Error(
-        'REPO_URL environment variable must be set at build time',
-      );
-    }
-    return url;
-  })(),
+  CHALLENGES_REPO_URL: 'https://github.com/ryok90/valor-interview.git',
 
   /**
    * Directory structure within the repository
