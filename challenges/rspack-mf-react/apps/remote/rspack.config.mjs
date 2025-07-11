@@ -74,7 +74,7 @@ const config = defineConfig({
       name: 'remote',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': './src/remote-entry.ts',
+        './ExposedModule': './src/remote-entry.ts',
       },
       shared: {
         react: {
