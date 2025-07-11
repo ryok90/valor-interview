@@ -1,6 +1,6 @@
 packages:
-  - host
-  - remote
+  - apps/host
+  - apps/remote
 
 ignoredBuiltDependencies:
   - esbuild

@@ -20,12 +20,12 @@ pnpm i
 
 And run the host application:
 ```bash
-pnpm --filter host run serve
+pnpm --filter host run dev
 ```
 
 And run the remote application:
 ```bash
-pnpm --filter remote run serve
+pnpm --filter remote run dev
 ```
 
 The complete resolution of the host application must look something like this:
