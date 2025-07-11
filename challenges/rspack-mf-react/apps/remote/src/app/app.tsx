@@ -1,4 +1,3 @@
-import '../styles.css';
 import Table, { type TableData } from '../components/table/table';
 
 const tableData: TableData[] = [
