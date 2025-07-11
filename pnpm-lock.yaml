@@ -10,7 +10,7 @@ importers:
 
   challenges/rspack-mf-react: {}
 
-  challenges/rspack-mf-react/host:
+  challenges/rspack-mf-react/apps/host:
     dependencies:
       '@tailwindcss/postcss':
         specifier: ^4.1.11
@@ -59,7 +59,7 @@ importers:
         specifier: ^0.0.55
         version: 0.0.55(@swc/helpers@0.5.17)(webpack@5.100.0)
 
-  challenges/rspack-mf-react/remote:
+  challenges/rspack-mf-react/apps/remote:
     dependencies:
       '@tailwindcss/postcss':
         specifier: ^4.1.11
