@@ -40,8 +40,7 @@ export const logWarning = (message: string): void => {
 export const logError = (message: string, error?: unknown): void => {
   console.error(chalk.red('❌ Error:'), message);
   if (error) {
-    const errorMessage =
-      error instanceof Error ? error.message : String(error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
     console.error(chalk.red(errorMessage));
   }
 };

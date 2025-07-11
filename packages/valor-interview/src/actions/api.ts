@@ -8,7 +8,7 @@ export class GitHubApiError extends Error {
   constructor(
     message: string,
     public readonly statusCode?: number,
-    public readonly response?: Response
+    public readonly response?: Response,
   ) {
     super(message);
     this.name = 'GitHubApiError';
@@ -26,7 +26,7 @@ export const parseGitHubUrl = (repoUrl: string): GitHubRepoInfo => {
   if (!match) {
     throw new Error(`Invalid GitHub repository URL: ${repoUrl}`);
   }
-  
+
   return {
     owner: match[1],
     repo: match[2],

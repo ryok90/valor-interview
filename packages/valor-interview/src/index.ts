@@ -7,7 +7,10 @@ import {
   promptDestinationPath,
   promptInstallDependencies,
 } from './actions/prompts.js';
-import { installDependencies, detectPackageManager } from './actions/process.js';
+import {
+  installDependencies,
+  detectPackageManager,
+} from './actions/process.js';
 import {
   logHeader,
   logWarning,

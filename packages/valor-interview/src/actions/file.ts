@@ -69,9 +69,7 @@ export const scanChallengesFromFilesystem = async (
  * @returns Array of available challenges
  * @throws {Error} If the repository is not supported
  */
-export const scanChallenges = async (
-  repoUrl: string,
-): Promise<Challenge[]> => {
+export const scanChallenges = async (repoUrl: string): Promise<Challenge[]> => {
   if (!isGitHubRepository(repoUrl)) {
     throw new Error(
       'Only GitHub repositories are supported for challenge scanning',

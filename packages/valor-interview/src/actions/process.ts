@@ -1,6 +1,10 @@
 import { spawn } from 'child_process';
 import ora from 'ora';
-import type { InstallOptions, PackageManager, CommandOptions } from '../types.js';
+import type {
+  InstallOptions,
+  PackageManager,
+  CommandOptions,
+} from '../types.js';
 
 /**
  * Executes a command in a child process

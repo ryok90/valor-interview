@@ -1,6 +1,7 @@
 # Valor Interview Challenge
 
 This project features:
+
 - Rspack;
 - Module Federation;
 - React;
@@ -14,16 +15,19 @@ There are several problems with this repository which the candidate must debug, 
 ## Getting started
 
 Install the dependencies if they are not installed yet:
+
 ```bash
 pnpm i
 ```
 
 And run the host application:
+
 ```bash
 pnpm --filter host run dev
 ```
 
 And run the remote application:
+
 ```bash
 pnpm --filter remote run dev
 ```

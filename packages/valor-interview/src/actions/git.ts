@@ -178,13 +178,15 @@ export const initializeGitRepository = async (
   try {
     await runCommand('git', ['init'], { cwd: destinationPath });
     await runCommand('git', ['add', '.'], { cwd: destinationPath });
-    await runCommand('git', ['commit', '-m', 'Initial commit'], { 
-      cwd: destinationPath 
+    await runCommand('git', ['commit', '-m', 'Initial commit'], {
+      cwd: destinationPath,
     });
 
     spinner.succeed('Git repository initialized successfully');
   } catch (error) {
     spinner.fail('Failed to initialize git repository');
-    console.warn('Warning: Failed to initialize git repository. You may need to set up git manually.');
+    console.warn(
+      'Warning: Failed to initialize git repository. You may need to set up git manually.',
+    );
   }
 };
