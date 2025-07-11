@@ -8,9 +8,7 @@ importers:
 
   .: {}
 
-  challenges/rspack-mf-react: {}
-
-  challenges/rspack-mf-react/apps/host:
+  challenges/rspack-mf-react:
     dependencies:
       '@tailwindcss/postcss':
         specifier: ^4.1.11
@@ -59,54 +57,9 @@ importers:
         specifier: ^0.0.55
         version: 0.0.55(@swc/helpers@0.5.17)(webpack@5.100.0)
 
-  challenges/rspack-mf-react/apps/remote:
-    dependencies:
-      '@tailwindcss/postcss':
-        specifier: ^4.1.11
-        version: 4.1.11
-      postcss:
-        specifier: ^8.5.6
-        version: 8.5.6
-      postcss-loader:
-        specifier: ^8.1.1
-        version: 8.1.1(@rspack/core@1.4.5(@swc/helpers@0.5.17))(postcss@8.5.6)(typescript@5.8.3)(webpack@5.100.0)
-      react:
-        specifier: ^19.1.0
-        version: 19.1.0
-      react-dom:
-        specifier: ^19.1.0
-        version: 19.1.0(react@19.1.0)
-      tailwindcss:
-        specifier: ^4.1.11
-        version: 4.1.11
-    devDependencies:
-      '@module-federation/enhanced':
-        specifier: ^0.16.0
-        version: 0.16.0(@rspack/core@1.4.5(@swc/helpers@0.5.17))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)(webpack@5.100.0)
-      '@rspack/cli':
-        specifier: ^1.4.5
-        version: 1.4.5(@rspack/core@1.4.5(@swc/helpers@0.5.17))(@types/express@4.17.23)(webpack@5.100.0)
-      '@rspack/core':
-        specifier: ^1.4.5
-        version: 1.4.5(@swc/helpers@0.5.17)
-      '@rspack/plugin-react-refresh':
-        specifier: ^1.4.3
-        version: 1.4.3(react-refresh@0.17.0)
-      '@types/react':
-        specifier: ^19.1.7
-        version: 19.1.8
-      '@types/react-dom':
-        specifier: ^19.1.6
-        version: 19.1.6(@types/react@19.1.8)
-      react-refresh:
-        specifier: ^0.17.0
-        version: 0.17.0
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
-      zephyr-rspack-plugin:
-        specifier: ^0.0.55
-        version: 0.0.55(@swc/helpers@0.5.17)(webpack@5.100.0)
+  challenges/rspack-mf-react/apps/host: {}
+
+  challenges/rspack-mf-react/apps/remote: {}
 
   packages/valor-interview:
     dependencies:

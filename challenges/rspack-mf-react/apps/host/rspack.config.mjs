@@ -17,9 +17,6 @@ const config = defineConfig({
   entry: {
     main: './src/main.ts',
   },
-  output: {
-    publicPath: '/',
-  },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
@@ -79,11 +76,9 @@ const config = defineConfig({
       shared: {
         react: {
           singleton: true,
-          requiredVersion: '^19.0.0',
         },
         'react-dom': {
           singleton: true,
-          requiredVersion: '^19.0.0',
         },
       },
       runtimePlugins: [join(__dirname, './src/mf-plugins/error-handler.ts')],

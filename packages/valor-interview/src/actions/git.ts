@@ -164,3 +164,27 @@ export const withSpecificFolder = async <T>(
     await cleanupTempDirectory(tempDir);
   }
 };
+
+/**
+ * Initializes a git repository in the specified directory
+ * Handles errors gracefully and logs warnings instead of throwing
+ * @param destinationPath - Path where the git repository should be initialized
+ */
+export const initializeGitRepository = async (
+  destinationPath: string,
+): Promise<void> => {
+  const spinner = ora('Initializing git repository...').start();
+
+  try {
+    await runCommand('git', ['init'], { cwd: destinationPath });
+    await runCommand('git', ['add', '.'], { cwd: destinationPath });
+    await runCommand('git', ['commit', '-m', 'Initial commit'], { 
+      cwd: destinationPath 
+    });
+
+    spinner.succeed('Git repository initialized successfully');
+  } catch (error) {
+    spinner.fail('Failed to initialize git repository');
+    console.warn('Warning: Failed to initialize git repository. You may need to set up git manually.');
+  }
+};

@@ -14,7 +14,7 @@ import {
   logError,
   logCompletion,
 } from './actions/logger.js';
-import { withSpecificFolder } from './actions/git.js';
+import { withSpecificFolder, initializeGitRepository } from './actions/git.js';
 import { CONFIG } from './config.js';
 import { GitHubApiError } from './actions/api.js';
 
@@ -54,7 +54,10 @@ const main = async (): Promise<void> => {
       },
     );
 
-    // Step 4: Optional dependency installation
+    // Step 4: Initialize git repository
+    await initializeGitRepository(challengeDestination);
+
+    // Step 5: Optional dependency installation
     const shouldInstallDeps = await promptInstallDependencies();
 
     if (shouldInstallDeps) {

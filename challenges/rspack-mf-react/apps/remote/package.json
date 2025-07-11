@@ -1,30 +1,10 @@
 {
   "name": "remote",
-  "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "pnpm typecheck && rspack dev",
     "build": "pnpm typecheck && rspack build",
     "preview": "rspack preview",
     "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@tailwindcss/postcss": "^4.1.11",
-    "postcss": "^8.5.6",
-    "postcss-loader": "^8.1.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.11"
-  },
-  "devDependencies": {
-    "@module-federation/enhanced": "^0.16.0",
-    "@rspack/cli": "^1.4.5",
-    "@rspack/core": "^1.4.5",
-    "@rspack/plugin-react-refresh": "^1.4.3",
-    "@types/react": "^19.1.7",
-    "@types/react-dom": "^19.1.6",
-    "react-refresh": "^0.17.0",
-    "typescript": "^5.8.3",
-    "zephyr-rspack-plugin": "^0.0.55"
   }
 }
