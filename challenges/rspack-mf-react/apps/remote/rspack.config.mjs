@@ -17,9 +17,6 @@ const config = defineConfig({
   entry: {
     main: './src/main.ts',
   },
-  output: {
-    publicPath: '/',
-  },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
