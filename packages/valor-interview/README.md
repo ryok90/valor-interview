@@ -5,7 +5,7 @@ A CLI tool for downloading and setting up Valor interview challenges.
 ## Usage
 
 ```bash
-npx @valor/interview
+npx valor-interview
 ```
 
 The CLI will:

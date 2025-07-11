@@ -1,6 +1,6 @@
 {
-  "name": "@valor/interview",
-  "version": "0.0.1",
+  "name": "valor-interview",
+  "version": "0.0.2",
   "description": "CLI tool for downloading Valor interview challenges",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
