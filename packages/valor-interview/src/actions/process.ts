@@ -4,7 +4,7 @@ import type {
   InstallOptions,
   PackageManager,
   CommandOptions,
-} from '../types.js';
+} from '../types';
 
 /**
  * Executes a command in a child process

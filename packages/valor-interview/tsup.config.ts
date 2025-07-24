@@ -9,7 +9,6 @@ export default defineConfig({
   minify: false,
   platform: 'node',
   target: 'node18',
-  banner: {
-    js: '#!/usr/bin/env node'
-  }
+  noExternal: ['fs-extra', 'inquirer', 'ora', 'chalk'],
+  bundle: true
 });

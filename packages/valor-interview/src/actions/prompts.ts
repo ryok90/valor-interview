@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
-import type { Challenge } from '../types.js';
-import { validatePath, resolvePath } from './file.js';
+import type { Challenge } from '../types';
+import { validatePath, resolvePath } from './file';
 
 /**
  * Prompts the user to select a challenge from the available options

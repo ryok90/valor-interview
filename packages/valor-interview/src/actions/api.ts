@@ -1,5 +1,5 @@
-import type { Challenge, GitHubRepoInfo, GitHubApiItem } from '../types.js';
-import { CONFIG } from '../config.js';
+import type { Challenge, GitHubRepoInfo, GitHubApiItem } from '../types';
+import { CONFIG } from '../config';
 
 /**
  * Custom error class for GitHub API related errors

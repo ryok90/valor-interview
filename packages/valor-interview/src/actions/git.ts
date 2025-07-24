@@ -2,8 +2,8 @@ import { mkdtemp, remove } from 'fs-extra';
 import { join } from 'path';
 import { tmpdir } from 'os';
 import ora from 'ora';
-import { runCommand } from './process.js';
-import { CONFIG } from '../config.js';
+import { runCommand } from './process';
+import { CONFIG } from '../config';
 
 /**
  * Creates a temporary directory with the configured prefix

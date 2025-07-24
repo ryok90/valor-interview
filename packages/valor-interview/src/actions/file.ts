@@ -1,9 +1,9 @@
 import { readdir, stat, copy, remove, pathExists } from 'fs-extra';
 import { join, resolve } from 'path';
 import ora from 'ora';
-import type { Challenge, CopyOptions } from '../types.js';
-import { CONFIG } from '../config.js';
-import { fetchChallengesFromAPI, isGitHubRepository } from './api.js';
+import type { Challenge, CopyOptions } from '../types';
+import { CONFIG } from '../config';
+import { fetchChallengesFromAPI, isGitHubRepository } from './api';
 
 /**
  * Gets the challenges directory path within a cloned repository

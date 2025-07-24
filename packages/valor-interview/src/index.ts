@@ -1,25 +1,24 @@
-#!/usr/bin/env node
 
 import { join } from 'path';
-import { scanChallenges, copyChallenge } from './actions/file.js';
+import { scanChallenges, copyChallenge } from './actions/file';
 import {
   promptChallengeSelection,
   promptDestinationPath,
   promptInstallDependencies,
-} from './actions/prompts.js';
+} from './actions/prompts';
 import {
   installDependencies,
   detectPackageManager,
-} from './actions/process.js';
+} from './actions/process';
 import {
   logHeader,
   logWarning,
   logError,
   logCompletion,
-} from './actions/logger.js';
-import { withSpecificFolder, initializeGitRepository } from './actions/git.js';
-import { CONFIG } from './config.js';
-import { GitHubApiError } from './actions/api.js';
+} from './actions/logger';
+import { withSpecificFolder, initializeGitRepository } from './actions/git';
+import { CONFIG } from './config';
+import { GitHubApiError } from './actions/api';
 
 /**
  * Main CLI execution function
