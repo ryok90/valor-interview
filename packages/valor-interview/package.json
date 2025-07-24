@@ -2,6 +2,7 @@
   "name": "valor-interview",
   "version": "0.0.3",
   "description": "CLI tool for downloading Valor interview challenges",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
