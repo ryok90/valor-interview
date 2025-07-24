@@ -1,5 +1,4 @@
-import pkg from 'fs-extra';
-const { readdir, stat, copy, remove, pathExists } = pkg;
+import { readdir, stat, copy, remove, pathExists } from 'fs-extra';
 import { join, resolve } from 'path';
 import ora from 'ora';
 import type { Challenge, CopyOptions } from '../types.js';
