@@ -1,4 +1,4 @@
-import { mkdtemp, remove } from 'fs-extra';
+import { mkdtemp, remove, writeFile, ensureDir } from 'fs-extra';
 import { join } from 'path';
 import { tmpdir } from 'os';
 import ora from 'ora';
@@ -93,13 +93,13 @@ export const cloneSpecificFolder = async (
       cwd: destination,
     });
 
-    // Set sparse checkout path
-    await runCommand(
-      'sh',
-      ['-c', `echo "${folderPath}/*" > .git/info/sparse-checkout`],
-      {
-        cwd: destination,
-      },
+    // Set sparse checkout path using cross-platform file operations
+    const gitInfoDir = join(destination, '.git', 'info');
+    await ensureDir(gitInfoDir);
+    await writeFile(
+      join(gitInfoDir, 'sparse-checkout'),
+      `${folderPath}/*\n`,
+      'utf8'
     );
 
     // Pull only the specific folder
